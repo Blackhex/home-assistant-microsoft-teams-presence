@@ -1,0 +1,12 @@
+name: Default Workflow
+
+on:
+  - push
+  - workflow_dispatch
+
+jobs:
+  deploy:
+    runs-on: deployment
+    steps:
+      - run: |
+          echo "Test"
