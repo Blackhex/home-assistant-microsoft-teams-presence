@@ -7,6 +7,9 @@ on:
 jobs:
   deploy:
     runs-on: deployment
-    steps:
+    defaults:
+      run:
+        working-directory: /opt/home-assistant-microsoft-teams-presence/
+    steps:      
       - run: |
-          echo "Test"
+          git pull
